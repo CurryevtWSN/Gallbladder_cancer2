@@ -64,10 +64,10 @@ Radiation_recode = map[Radiation_recode]
 
 # 数据读取，特征标注
 #%%load model
-xgb_model = joblib.load(r'D:\厦门大学\合作\刘荣强\胆囊癌SEER\xgb_model.pkl')
+xgb_model = joblib.load('xgb_model.pkl')
 
 #%%load data
-hp_train = pd.read_excel(r"D:\厦门大学\合作\刘荣强\胆囊癌SEER\data.xlsx", sheet_name="Sheet1")
+hp_train = pd.read_excel("data.xlsx", sheet_name="Sheet1")
 features = ["Combined_Summary_Stage","T","Surgery_Recode","Age","N","Median_household_income_inflation_adj_to_2021","Radiation_recode"]
 target = ["M"]
 y = np.array(hp_train[target])
