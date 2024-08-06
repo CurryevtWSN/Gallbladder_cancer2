@@ -19,7 +19,7 @@ st.title('Prediction system for gallbladder cancer distant metastasis:a retrospe
 
 #%%set varixgbles selection
 st.sidebar.markdown('## Varixgbles')
-Combined_Summary_Stage =  st.sidebar.selectbox("Combined Summary Stage",('Stage I', 'Stage II', "Stage III"),index=1)
+Combined_Summary_Stage =  st.sidebar.selectbox("Combined Summary Stage",('Stage I', 'Stage II', "Stage III"),index=2)
 T = st.sidebar.selectbox("T Recode", ('T0','T1','T2','T3','T4','TX'), index = 4)
 Surgery_Recode = st.sidebar.selectbox("Surgery Recode", ('No',"Yes"), index = 1)
 Age =  st.sidebar.slider("Age (year)", 5,95,value = 65, step = 1)
